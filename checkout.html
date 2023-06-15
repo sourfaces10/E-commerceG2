@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Footgear Project</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <section id="header">
+    <a href="index.html"><img src="img/FinalLogo1.png" class="logo" alt="FinalLogo"></a>
+  
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li id="lg-bag"><a href="account-sign-up.html"><i class="fa-solid fa-user"></i></a></li>
+        <li id="lg-bag"><a class="active" href="cart.html"><i class="fa-solid fa-cart-plus"></i></a></li>
+        <li><a href="#" id="close"><i class="fa-solid fa-x"></i></a></li>
+      </ul>
+    </div>
+    
+    <div id="mobile">
+      <a href="account-sign-up.html"><i class="fa-solid fa-user"></i></a>
+      <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+      <a href="#" id="bar"><i class="fa-solid fa-bars"></i></a>
+    </div>
+  </section>
+  
+  <section id="page-header" class="cart-header">
+    <h2>CHECKOUT</h2>
+    <p>"True value of a cart is in the goods it carries"</p>
+  </section>
+  
+ <section id="checkout-page">
+  <div class="container">
+     <h3>Total Amount to be Paid: <span id="totalAmount"></span></h3>
+    <div class="payment-options">
+      <h3>Select Payment Method:</h3>
+      <ul>
+        <li>
+          <input type="radio" id="gcash" name="payment-method" value="gcash">
+          <label for="gcash">GCash</label>
+        </li>
+        <li>
+          <input type="radio" id="paymaya" name="payment-method" value="paymaya">
+          <label for="paymaya">PayMaya</label>
+        </li>
+        <li>
+          <input type="radio" id="bdo" name="payment-method" value="bdo">
+          <label for="bdo">BDO</label>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="delivery-section">
+      <h3>Mode of Delivery</h3>
+      <div class="delivery-option">
+        <input type="radio" id="jt-shipping" name="delivery" value="jt">
+        <label for="jt-shipping">J&amp;T Shipping</label>
+      </div>
+      <div class="delivery-option">
+        <input type="radio" id="lbc-shipping" name="delivery" value="lbc">
+        <label for="lbc-shipping">LBC</label>
+      </div>
+    
+    <div class="checkout-form">
+      <h3>Billing Information</h3>
+      <form>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="address">Address</label>
+          <textarea id="address" name="address" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" required>
+        </div>
+        <div class="form-group">
+          <label for="zip">Zip Code</label>
+          <input type="text" id="zip" name="zip" required>
+        </div>
+        <div class="form-group">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country" required>
+        </div>
+        <div class="form-group">
+          <label for="card">Credit Card Number</label>
+          <input type="text" id="card" name="card" required>
+        </div>
+        <div class="form-group">
+          <label for="expiry">Card Expiry Date</label>
+          <input type="text" id="expiry" name="expiry" required>
+        </div>
+        <div class="form-group">
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" name="cvv" required>
+        </div>
+        <button type="submit" onclick="window.location.href='congrats.html';">Place Order</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+  
+  <section id="newsletter">
+    <div class="newstext">
+      <h4>Sign Up For Newsletters</h4>
+      <p>Get E-mail updates about uor latest shop and <span>special offers.</span></p>
+    </div>
+    <div class="form">
+      <input type="text" placeholder="Your email address"/>
+      <button class="normal">Subscribe</button>
+    </div>
+  </section>
+  
+  <footer class="section-p1">
+    <div class="col">
+      <img src="img/FinalLogo1.png" alt="" class="logo" width="30px" height="30px">
+      <h4>Contact</h4>
+      <p><strong>Address: </strong> Pag-Antayan, Cantilan, Surigao del Sur</p>
+      <p><strong>Phone: </strong>09100945295</p>
+      <p><strong>Hours: </strong>10:00am - 6:00pm, Mon - Sat</p>
+      <div class="follow">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.pinterest.com"><i class="fab fa-pinterest"></i></a>
+          <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <h4>About</h4>
+      <a href="#">About Us</a>
+      <a href="#">Delivery Information</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms and Conditions</a>
+      <a href="#">Contact Us</a>
+    </div>
+    
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+      <a href="#">View Cart</a>
+      <a href="#">My Wishlist</a>
+      <a href="#">Track my Order</a>
+      <a href="#">Help</a>
+    </div>
+    
+    <div class="col-int">
+      <h4>Payment</h4>
+      <p>Secured Payment Gateway</p>
+      <img src="img/icons/gcash.png" alt="" width="50px" height="40px"/>
+      <img src="img/icons/paymaya.png" alt="" width="80px" height="40px"/>
+      <img src="img/icons/bdo.jpg" alt="" width="60px" height="40px"/>
+    </div>
+    
+    <div class="copyright">
+      <p>© 2023, Group 2. Sourface</p>
+    </div>
+    
+  </footer>
+  
+  <script>
+    // Get the total amount from localStorage if available
+    var storedTotal = localStorage.getItem('totalAmount');
+    if (storedTotal) {
+      document.getElementById('totalAmount').innerText = '₱ ' + storedTotal;
+    }
+
+    function updateTotal() {
+      var cartRows = document.querySelectorAll('.cart-items tr');
+      var subtotal = 0;
+
+      for (var i = 0; i < cartRows.length; i++) {
+        // Calculate subtotal for each cart item
+        var cartRow = cartRows[i];
+        var priceElement = cartRow.querySelector('.cart-price');
+        var priceText = priceElement.innerText.trim();
+        var priceMatch = priceText.match(/\d+(,\d+)?(\.\d+)?/);
+        var price = priceMatch ? parseFloat(priceMatch[0].replace(/,/g, '')).toFixed(2) : 0;
+
+        var quantityElement = cartRow.querySelector('.cart-quantity-input');
+        var quantity = parseInt(quantityElement.value);
+
+        subtotal += price * quantity;
+      }
+      
+      var total = subtotal; // Set the total as the subtotal
+
+      var totalElement = document.getElementById('totalAmount');
+      totalElement.innerText = '₱ ' + total.toFixed(2);
+      // Store the total amount in localStorage
+      localStorage.setItem('totalAmount', total.toFixed(2));
+    }
+    
+    function processCheckout() {
+      var paymentMethod = document.querySelector('input[name="payment-method"]:checked').value;
+      console.log('Selected payment method:', paymentMethod);
+
+      var deliveryOption = document.querySelector('input[name="delivery"]:checked').value;
+      console.log('Selected delivery option:', deliveryOption);
+    }
+  </script>
+<script src="cart.js"></script>
+<script src="navbar.js"></script>
+</body>
+</html>
